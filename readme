@@ -1,0 +1,63 @@
+Program: ideal mate analysis
+Method: By Bayes' statistic, estimate if someone is suitable for you or not.
+        The original idea is from the article: https://pansci.asia/archives/66830
+You can find more detailed information in the link.
+
+Author:Carl Chien
+programb.c : The code
+origin_data: The initial log file
+data_example: The log file helps you to realize how it works.
+
+
+Program Instruction:
+
+When you use this program first time, please do the following steps.
+1. gcc programb.c
+2. cp origin_data data
+3. ./a.out
+
+The information inputed in program will be saved into the file "data"
+
+After first using, you can just execute the “a.out”
+If you want delete some data, you can delete them in the “data” file.
+
+For example: I would like to delete data No.2 
+
+data_number= 4              4 -> 3
+-------------------------
+No. 1
+Alice
+0.500000 0.500000
+-------------------------
+No. 2                                            —>delete
+She lost her weight over 10 kg in this semester. —>delete 
+0.700000 0.600000                                —>delete
+-------------------------                        —>delete
+No. 3
+She helped an old man to cross the street.
+0.800000 0.500000
+-------------------------
+No. 4
+She sent me a Christmas gift this year.
+0.800000 0.800000
+-------------------------
+
+After modifying, the data will become
+
+data_number= 3              
+-------------------------
+No. 1
+Alice
+0.500000 0.500000
+-------------------------
+No. 3
+She helped an old man to cross the street.
+0.800000 0.500000
+-------------------------
+No. 4
+She sent me a Christmas gift this year.
+0.800000 0.800000
+-------------------------
+
+ 
+	
