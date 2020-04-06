@@ -9,9 +9,9 @@ origin_data: The initial log file
 data_example: The log file helps you to realize how it works.
 
 
-Program Instruction:
+Program Instruction (Linux terminal):
 
-When you use this program first time, please do the following steps.
+When you use this program first time, please do the following steps. 
 1. gcc programb.c
 2. cp origin_data data
 3. ./a.out
